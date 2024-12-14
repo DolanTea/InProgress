@@ -1,0 +1,225 @@
+/* background imagine i.p.v. in html zodat je de tekst eroverheen kan zetten */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url("podcast_images/header.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+/* zodat de tekst in gewenste plaatsing krijgt in de image/header */
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+/* dit haalt de bolletjes bij de links weg */
+header li {
+    margin: 10%;
+    list-style-type: none;
+}
+
+header nav {
+    width: 29%;
+}
+
+body {
+    font-family: cursive, sans-serif;
+}
+
+h1 {
+    color: black;
+}
+
+h1:hover {
+    animation-name: animatie_header;
+    animation-duration: 2s;
+}
+
+@keyframes animatie_header {
+    0% {
+        color: pink;
+    }
+
+    50% {
+        color: darkgreen;
+    }
+
+    100% {
+        color: mediumvioletred;
+    }
+}
+
+/* class gebruikt om de blockquote in het midden te stylen, enigste reden */
+.blockquote {
+    display: flex;
+    justify-content: center;
+}
+
+blockquote {
+    background-color: darkseagreen;
+    font-size: large;
+    padding: 2%;
+    border-radius: 1.2em;
+}
+
+main section p {
+    display: flex;
+    justify-content: center;
+    padding: 0% 20%;
+}
+
+/* width werkt niet en ik wil ruimte geven zodat de hele tekst niet over de gehele pagina staat */
+/* section is de container, Iframe is de item */
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 1em 0em;
+}
+
+/* ruimte tussen blokken is margin, ruimte tussen items is padding (selfnote onthouden!) */
+
+/* dit was standaard gestyled in inline-css html als je iframe kopieert en plakt in pixels dus omgezet in em */
+iframe {
+    width: 22em;
+    height: 17em;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:link {
+    color: #6900ff;
+}
+
+a:hover {
+    color: violet;
+    text-decoration: underline;
+}
+
+main section {
+    background-image: linear-gradient(#e5bb7c, #eab5b5);
+    margin: auto;
+    border: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+/* deze ook nodig voor fotos in aboutus te stylen aangezien ik specifiek moest selecteren heb ik de div gebruikt (dit was mijn eerste section div voordat ik classes en id bij de andere had gebruikt*/
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.5em;
+}
+
+section div article {
+    display: flex;
+    flex-direction: column;
+    background-image: url(podcast_images/aflevering.jpg);
+    width: 40%;
+    border-radius: 1.2em;
+}
+
+section div article p {
+    text-align: center;
+}
+
+img {
+    border-radius: 25em;
+    max-width: fit-content;
+    height: auto;
+}
+
+.Teamsleden {
+    display: flex;
+    flex-direction: row;
+}
+
+.Teamsleden div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* background-color: blue; */
+}
+
+.Teamsleden article {
+    width: 20%;
+}
+
+.InProgressHosts {
+    display: unset;
+    display: flex;
+    justify-content: center;
+}
+
+#Perfectionisme {
+    text-decoration: none;
+    width: 1em;
+}
+
+#Vragen {
+    background-image: linear-gradient(130deg, #F3AFC0, #F6E6CC, #F6E6CC, #F3AFC0);
+    display: flex;
+    justify-content: center;
+}
+
+/* met de id kan ik het specifiek selecteren omdat het al in een andere main article zit + ik het anders wou stylen*/
+
+#Vragen>* {
+    padding: 2%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form label {
+    margin-top: 5%;
+}
+
+form input {
+    border: none;
+    border-radius: 1.1em;
+    padding: 0.6em;
+}
+
+form textarea {
+    border: none;
+    border-radius: 1.1em;
+    padding: 0.6em;
+}
+
+
+/* opgezocht specifiek submit knop ruimte geven door te selecterem */
+/* https://stackoverflow.com/questions/40525866/css-for-inputtype-submit */
+form input[type=submit] {
+    margin-top: 0.6em;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: url(podcast_images/footer.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    align-items: center;
+}

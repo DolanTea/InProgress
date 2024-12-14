@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum In Progress</title>
+    <link rel="stylesheet" href="podcast_css.css">
+</head>
+
+<body>
+    <header>
+        <h1>In Progress</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="aboutus_inprogress.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Waar wij in geloven</h2>
+            <p>Onze missie? Jou een plek bieden waar je jezelf kunt zijn, kunt leren en kunt groeien. Bij onze podcast
+                maken we persoonlijke groei toegankelijk, eerlijk en herkenbaar.
+                We willen je inspireren met verhalen, tools en inzichten die echt bij jou passen. Want groeien doe je
+                niet alleen - dat doen we samen.</p>
+        </section>
+
+        <section>
+            <h2>Waar wij voor staan</h2>
+            <p>Ken je dat gevoel? Je loopt ergens tegenaan, maar je weet niet waar je moet beginnen. Of je wilt groeien,
+                maar alles voelt overweldigend.
+                Bij In Progress vind je een veilige plek voor persoonlijke groei. Soof en Lily bespreken elke week
+                herkenbare onderwerpen op een eerlijke en ontspannen manier. Ze nodigen ook experts uit die je net dat
+                beetje extra inzicht geven.
+                Hier begrijpen we jouw uitdagingen en helpen we je verder. Want groeien hoeft niet perfect te zijn,
+                zolang het maar oprecht is.</p>
+
+            <div class="InProgressHosts">
+                <img src="podcast_images/lily.jpg" alt="foto van Lily handen tegen de wangen geshokeerd">
+                <img src="podcast_images/soof.jpg" alt="foto van Soof die lachend kijkt">
+            </div>
+            <!-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes -->
+            <!-- het heeft geen heading in mijn ontwerp en kon dus geen article zijn. Zelf kon ik de div niet selecteren wegens andere divs in andere htmls & was het nodig voor styling doeleinden om ze gecentreerd te krijgen -->
+        </section>
+
+        <article id="Vragen">
+            <h2>Voor al je persoonlijke vragen!</h2>
+            <div>
+                <p>Stel gerust je vragen, onze psycholoog Louén verzamelt & beantwoord de meeste vragen die erg
+                    specifiek
+                    ingaan
+                    op jouw bericht.
+                </p>
+                <p> Graag vermelden waarbij je raad wilt van ons. "Ik weet niet ..." helpt ons niet verder, schrijf het
+                    liefst
+                    een korte situatie-omschrijving zodat we een beter beeld kunnen krijgen waarvoor je raad zoekt.
+                </p>
+                <p> Voor meer algemeen veel voorkomende onderwerpen kan het mogelijk een aflevering worden waarbij Stoof
+                    &
+                    Lily
+                    gezamenlijk over gaan discussiëren, ter plekke zodat hun eerste bevindingen worden opgenomen.
+                </p>
+                <!-- https://www.w3schools.com/html/html_id.asp -->
+                <!-- informatie gezocht over id aangezien ik anders niet de article zelf kon selecteren in css om te stylen heb ik het een id gegeven, ik wou ook graag met 1 class en 1 id te werk gaan -->
+            </div>
+
+            <form action="InProgress_page.php">
+                <label for="Gebruikersnaam">Gebruikersnaam</label>
+                <input type="text" name="Gebruikersnaam" id=Gebruikersnaam placeholder="Lily" required>
+
+                <label for="Onderwerp">Onderwerp</label>
+                <input type="text" name="Onderwerp" id=Onderwerp placeholder="Stress door school">
+
+                <label for="Bericht">Bericht</label>
+                <textarea name="Bericht" id="Bericht" cols="30" rows="10"
+                    placeholder="Onderbouw je antwoord"></textarea>
+                <input type="submit" value="submit">
+            </form>
+            <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form -->
+            <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea -->
+            <!-- informatie opgezocht hoe je een form opbouwt/wat de functies doen/ hoe je ze in html verwerkt van textarea size aangezien dit niet in css ging-->
+        </article>
+    </main>
+
+    <footer>
+        <h2>Contact:</h2>
+        <a href="mailto:InProgress@gmail.com">Send email: InProgress@gmail.com</a>
+        <!-- https://www.w3schools.com/tags/tag_address.asp -->
+        <!-- mailto tag opgezocht want de eerste poging gaf niet de gewenste functie, het was a href van pagina doorverwijzen -->
+    </footer>
+</body>
+
+</html>
